@@ -54,7 +54,7 @@ public class Filelist extends Activity {
         	{
         		path = extras.getString("path");
         		
-        		if (path != "" )
+        		if (!"".equals(path))
         		{
 	            	dir = new File(path);
 	        		
@@ -70,13 +70,13 @@ public class Filelist extends Activity {
         		path = "";
         	}
         } 
-        if (path != "")
+        if ("".equals(path))
         {
             dir = new File(Environment.getExternalStorageDirectory().toString());
             files.addAll(Arrays.asList(dir.list()));
         }
 
-        
+
 /*
         final Stack<Integer> colors = new Stack<Integer>();
         colors.push(Color.RED);

@@ -20,5 +20,7 @@
     <string name="defaultRegex">(*._([^_]+))+|([^\\t]+)(\\t([^\\t]+))</string>
     <string name="regexLabel">regex to parse file</string>
     <string name="resetTimer">Reset timer</string>
+    <string name="clear">Clear</string>
+    <string name="skip">Skip</string>
 
 </resources>

@@ -1,176 +1,0 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5pt" >
-
-        <Button
-            android:id="@+id/browseButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="browseOnClick"
-            android:text="@string/Browse" />
-
-        <TextView
-            android:id="@+id/pathTextView"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5pt" >
-
-        <TextView
-            android:id="@+id/fromTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/From" />
-
-        <EditText
-            android:id="@+id/fromEditText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" >
-
-            <requestFocus />
-        </EditText>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/To" />
-
-        <EditText
-            android:id="@+id/toEditText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
-
-        <Button
-            android:id="@+id/rangeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="rangeOnClick"
-            android:text="@string/Range" />
-
-        <Button
-            android:id="@+id/resetButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="resetOnClick"
-            android:text="@string/Reset" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="5pt" >
-
-        <Button
-            android:id="@+id/timerButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="timerOnClick"
-            android:text="@string/resetTimer" />
-
-        <TextView
-            android:id="@+id/statusTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-    </LinearLayout>
-
-<View
-    android:layout_width="fill_parent"
-    android:layout_height="20dp"
-    android:background="#cccccc" />
-
-    <FrameLayout
-        android:id="@+id/studyLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <LinearLayout
-            android:id="@+id/requestLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/wordTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <Button
-                android:id="@+id/showButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minHeight="40pt"
-                android:minWidth="60pt"
-                android:onClick="showOnClick"
-                android:text="@string/Show" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/responseLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/largeTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Large Text"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <Button
-                    android:id="@+id/rightButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minHeight="40pt"
-                    android:minWidth="60pt"
-                    android:onClick="rightOnClick"
-                    android:text="@string/Right" />
-
-                <Button
-                    android:id="@+id/wrongButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minHeight="40pt"
-                    android:minWidth="60pt"
-                    android:onClick="wrongOnClick"
-                    android:text="@string/Wrong" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </FrameLayout>
-
-</LinearLayout>
